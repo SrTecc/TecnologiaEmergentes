@@ -1,0 +1,25 @@
+README - Projeto de Tecnologias Emergentes
+
+Aplicação: Sistema de Gerenciamento de Tarefas
+
+Tecnologias Utilizadas:
+
+Linguagem de Programação: Python
+Framework: Flask
+Banco de Dados: MongoDB
+Objetivo da Aplicação:
+O objetivo deste projeto é desenvolver um sistema de gerenciamento de tarefas que permita aos usuários criar, visualizar, atualizar e excluir tarefas de forma simples e eficiente. A aplicação seguirá a arquitetura RESTful e utilizará o protocolo HTTP para comunicação entre o cliente e o servidor.
+
+Funcionalidades:
+
+Criar uma nova tarefa: Os usuários poderão adicionar novas tarefas, informando um título, descrição, data de vencimento e prioridade.
+Visualizar tarefas: Os usuários poderão visualizar todas as tarefas existentes, ordenadas por data de vencimento.
+Atualizar tarefas: Os usuários poderão editar os detalhes de uma tarefa existente, como título, descrição, data de vencimento e prioridade.
+Excluir tarefas: Os usuários poderão excluir uma tarefa existente.
+Pesquisar tarefas: Os usuários poderão realizar pesquisas por título, descrição, data de vencimento ou prioridade das tarefas.
+Persistência de Dados:
+A aplicação utilizará o banco de dados MongoDB para armazenar e recuperar as informações das tarefas. O MongoDB é uma escolha adequada para esta aplicação devido à sua flexibilidade e escalabilidade, permitindo um armazenamento eficiente dos dados.
+
+Para mais informações sobre como executar e configurar a aplicação, consulte o arquivo de documentação disponibilizado junto com o código-fonte.
+
+Este projeto será desenvolvido em três checkpoints, onde serão apresentadas as etapas de implementação, e será finalizado com uma avaliação final. A cada entrega, novas funcionalidades serão adicionadas e a aplicação será aprimorada para melhor atender às necessidades dos usuários.
