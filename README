@@ -2,24 +2,89 @@ README - Projeto de Tecnologias Emergentes
 
 Aplicação: Sistema de Gerenciamento de Tarefas
 
-Tecnologias Utilizadas:
+Este projeto foi desenvolvido como parte da disciplina de Tecnologias Emergentes e consiste em um sistema de gerenciamento de tarefas que permite criar, ler, atualizar e excluir tarefas. Os dados das tarefas são persistidos em um banco de dados MongoDB.
+
+Ambiente de Desenvolvimento:
+
+Sistema Operacional: Windows 10
+IDE: Visual Studio Code
+Python: versão 3.9.5
+Node.js: versão 14.17.0
+MongoDB: versão 4.4.6
+Linguagem de Programação, Frameworks e Banco de Dados:
 
 Linguagem de Programação: Python
-Framework: Flask
+Framework Backend: Flask
+Framework Frontend: React
 Banco de Dados: MongoDB
-Objetivo da Aplicação:
-O objetivo deste projeto é desenvolver um sistema de gerenciamento de tarefas que permita aos usuários criar, visualizar, atualizar e excluir tarefas de forma simples e eficiente. A aplicação seguirá a arquitetura RESTful e utilizará o protocolo HTTP para comunicação entre o cliente e o servidor.
 
-Funcionalidades:
+Instruções de Instalação e Execução:
+Clone o repositório do projeto:
+git clone https://github.com/SrTecc/TecnologiaEmergentes.git
 
-Criar uma nova tarefa: Os usuários poderão adicionar novas tarefas, informando um título, descrição, data de vencimento e prioridade.
-Visualizar tarefas: Os usuários poderão visualizar todas as tarefas existentes, ordenadas por data de vencimento.
-Atualizar tarefas: Os usuários poderão editar os detalhes de uma tarefa existente, como título, descrição, data de vencimento e prioridade.
-Excluir tarefas: Os usuários poderão excluir uma tarefa existente.
-Pesquisar tarefas: Os usuários poderão realizar pesquisas por título, descrição, data de vencimento ou prioridade das tarefas.
-Persistência de Dados:
-A aplicação utilizará o banco de dados MongoDB para armazenar e recuperar as informações das tarefas. O MongoDB é uma escolha adequada para esta aplicação devido à sua flexibilidade e escalabilidade, permitindo um armazenamento eficiente dos dados.
+Acesse o diretório do projeto:
+cd TecnologiaEmergentes
 
-Para mais informações sobre como executar e configurar a aplicação, consulte o arquivo de documentação disponibilizado junto com o código-fonte.
+Configuração do Backend:
+Crie um ambiente virtual (opcional, mas recomendado):
+python -m venv venv
 
-Este projeto será desenvolvido em três checkpoints, onde serão apresentadas as etapas de implementação, e será finalizado com uma avaliação final. A cada entrega, novas funcionalidades serão adicionadas e a aplicação será aprimorada para melhor atender às necessidades dos usuários.
+Ative o ambiente virtual:
+Windows:
+venv\Scripts\activate
+
+Linux/Mac:
+source venv/bin/activate
+
+Instale as dependências do Flask:
+pip install -r backend/requirements.txt
+
+Configure as variáveis de ambiente para o Flask:
+Windows (PowerShell):
+$env:FLASK_APP = "app.py"
+$env:FLASK_ENV = "development"
+
+Linux/Mac:
+export FLASK_APP=app.py
+export FLASK_ENV=development
+
+Execute o servidor do Flask:
+flask run
+
+Configuração do Frontend:
+Acesse o diretório do frontend:
+cd frontend
+
+Instale as dependências do React:
+npm install
+
+Execute o servidor de desenvolvimento do React:
+npm start
+
+Requisitos de Sistema:
+
+Python 3.9 ou superior
+Node.js 14 ou superior
+MongoDB 4.4 ou superior
+Contribuição:
+
+Se desejar contribuir para o projeto, siga as orientações a seguir:
+Faça um fork do repositório.
+Crie um branch para a sua feature/correção: git checkout -b minha-feature.
+Faça as alterações desejadas.
+Realize os commits com mensagens descritivas: git commit -m "Minha mensagem".
+Faça o push para o branch criado: git push origin minha-feature.
+Abra um Pull Request no repositório original.
+Práticas de Código Limpo:
+
+Durante o desenvolvimento da aplicação, foram aplicadas as seguintes práticas de código limpo:
+Utilização de nomes descritivos para variáveis, funções e classes.
+Divisão do código em módulos e funções com responsabilidades bem definidas.
+Organização do código de acordo com as convenções da linguagem e dos frameworks utilizados.
+Utilização de comentários claros para explicar trechos de código complexos.
+Testes Automatizados:
+
+Foram criados testes automatizados para verificar o funcionamento correto das principais funcionalidades da aplicação. Os testes abrangem as operações de criação, leitura, atualização e exclusão de tarefas.
+Padrão de Projeto (opcional):
+
+No desenvolvimento da aplicação, foi aplicado o padrão de projeto MVC (Model-View-Controller). O modelo (Model) representa a estrutura de dados e as regras de negócio, a visão (View) trata da apresentação visual da aplicação e o controlador (Controller) coordena as interações entre o modelo e a visão.
